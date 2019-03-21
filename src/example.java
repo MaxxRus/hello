@@ -1,21 +1,34 @@
 public class example {
-    /* Таблица перевода дюймов в мерт
-    каждый 12 дюймов пробел
-     */
+    /* Таблица истености для логических операций
+
     public static void main(String[] args) {
-        double inch;
-        int fut;
-        fut = 0;
-        int metr;
-        for (metr = 1; metr <= 100; metr++) {
-            inch = metr * 39.37;
-            System.out.println(metr + " метр соответствует " + inch + " дюймов");
-            fut++;
-            if (fut == 12) {
-                System.out.println();
-                fut = 0;
-            }
-        }
-    }
-}
+        boolean p, q;
+        System.out.println("P\tQ\tAND\tOR\tXOR\tNOT");
+
+        p = true;
+        q = true;
+        System.out.print(p + "\t" + q +"\t");
+        System.out.print((p&q) + "\t" + (p|q) +"\t");
+        System.out.println((p^q) +"|t" + (!p));
+
+        p = true;
+        q = false;
+        System.out.print(p + "\t" + q +"\t");
+        System.out.print((p&q) + "\t" + (p|q) +"\t");
+        System.out.println((p^q) +"|t" + (!p));
+
+        p = false;
+        q = true;
+        System.out.print(p + "\t" + q +"\t");
+        System.out.print((p&q) + "\t" + (p|q) +"\t");
+        System.out.println((p^q) +"|t" + (!p));
+
+        p = false;
+        q = false;
+        System.out.print(p + "\t" + q +"\t");
+        System.out.print((p&q) + "\t" + (p|q) +"\t");
+        System.out.println((p^q) +"|t" + (!p));
+*/    }
+
+
 
